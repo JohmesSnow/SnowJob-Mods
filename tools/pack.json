@@ -70,6 +70,11 @@
       "source": { "type": "thunderstore", "package": "KalellModding-BoatAnchor", "version": "1.3.3" },
       "map": [ { "from": "BoatAnchor.dll", "to": "BepInEx/plugins/BoatAnchor/BoatAnchor.dll" } ] },
 
+    { "id": "HearthBelow", "name": "HearthBelow", "author": "Azumatt", "side": "both",
+      "page": "https://valheim.hexium.gg/mods/Azumatt/HearthBelow",
+      "source": { "type": "url", "url": "https://cdn.hexium.gg/upload/424/0.6.2.zip", "version": "0.6.2" },
+      "map": [ { "from": "HearthBelow.dll", "to": "BepInEx/plugins/HearthBelow/HearthBelow.dll" } ] },
+
     { "id": "HideBags", "name": "HideBags", "author": "Snow Job group", "side": "both", "version": "1.2.0",
       "page": "https://github.com/JohmesSnow/SnowJob-Mods/tree/main/mods/HideBags",
       "source": { "type": "repo" },

@@ -8,7 +8,7 @@ Anyone is welcome to use this pack for their own game or server.
 > **Unofficial, fan-made and non-commercial.** This project is not affiliated with or endorsed by
 > Iron Gate AB, Coffee Stain Publishing or any mod author. Valheim is a trademark of its owners.
 > Every third-party mod belongs to its author. We claim no ownership of them. The updater downloads
-> them directly from each author's own Thunderstore page, and this repository does not host copies.
+> them directly from each author's own Thunderstore or Hexium page, and this repository does not host copies.
 
 ## For players
 
@@ -38,7 +38,7 @@ modded.
 
 - Touch anything outside your Valheim folder.
 - Remove or change mods and settings that aren't part of this pack.
-- Download from anywhere except Thunderstore and this repository. Every file is checked against a
+- Download from anywhere except Thunderstore, Hexium and this repository. Every file is checked against a
   SHA-256 checksum before it is written, and a file that doesn't match is refused.
 - Run while Valheim is open.
 
@@ -60,6 +60,7 @@ modded.
 | [OdinShip](https://thunderstore.io/c/valheim/p/Marlthon/OdinShip/) | Marlthon | Both | New cargo and war ships |
 | [OdinHorse](https://thunderstore.io/c/valheim/p/OdinPlus/OdinHorse/) | OdinPlus | Both | Tameable, rideable horses |
 | [Boat Anchor](https://thunderstore.io/c/valheim/p/KalellModding/BoatAnchor/) | KalellModding | Both | Drop anchor with Shift+E at the rudder |
+| [HearthBelow](https://valheim.hexium.gg/mods/Azumatt/HearthBelow) | Azumatt | Both | Dig real tunnels and caves; better pickaxes dig deeper |
 | [HideBags](mods/HideBags) | Snow Job group | Both | Hide backpacks with extra rows, carry weight and a perk |
 | [PlantedYield](mods/PlantedYield) | Snow Job group | Both | Bushes you plant yourself give more per pick |
 | [TameFollow](mods/TameFollow) | Snow Job group | Client | Tamed boars and hens can follow or stay |

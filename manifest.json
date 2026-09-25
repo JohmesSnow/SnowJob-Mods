@@ -2,7 +2,7 @@
   "schema": 1,
   "name": "Snow Job mod pack",
   "game": "Valheim 1.0.16",
-  "generated": "2026-09-25T18:07:47Z",
+  "generated": "2026-09-25T21:20:39Z",
   "repoBase": "https://raw.githubusercontent.com/JohmesSnow/SnowJob-Mods/main/",
   "mods": [
     {
@@ -363,6 +363,26 @@
           "from": "BoatAnchor.dll",
           "to": "BepInEx/plugins/BoatAnchor/BoatAnchor.dll",
           "sha256": "7605c81f0517fc9bb80d9edfd5d4eedc427d05162bec2d1c7372370b24becbe4"
+        }
+      ]
+    },
+    {
+      "id": "HearthBelow",
+      "name": "HearthBelow",
+      "author": "Azumatt",
+      "side": "both",
+      "page": "https://valheim.hexium.gg/mods/Azumatt/HearthBelow",
+      "version": "0.6.2",
+      "source": {
+        "type": "zip",
+        "url": "https://cdn.hexium.gg/upload/424/0.6.2.zip",
+        "sha256": "29107fb934743df9130d7cf2bf8b7c1714cb7327ce24de1bfdd6b3046380d8ac"
+      },
+      "files": [
+        {
+          "from": "HearthBelow.dll",
+          "to": "BepInEx/plugins/HearthBelow/HearthBelow.dll",
+          "sha256": "a79a49aa9472e3559baf17715dad04c7b9980b99a74aafb9869846dd9d36fe54"
         }
       ]
     },

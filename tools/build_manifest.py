@@ -31,29 +31,42 @@ def check_rel(path: str) -> str:
     return p
 
 
-def thunderstore_zip(package: str, version: str) -> tuple[str, bytes]:
-    owner, name = package.split("-", 1)
-    url = f"https://thunderstore.io/package/download/{owner}/{name}/{version}/"
+ALLOWED_URL_PREFIXES = ("https://thunderstore.io/", "https://cdn.hexium.gg/")
+
+
+def fetch_zip(url: str, cache_name: str) -> bytes:
+    if not url.startswith(ALLOWED_URL_PREFIXES):
+        sys.exit(f"download address not allowed by the updater: {url}")
     os.makedirs(CACHE, exist_ok=True)
-    cached = os.path.join(CACHE, f"{package}-{version}.zip")
+    cached = os.path.join(CACHE, cache_name)
     if not os.path.exists(cached):
-        print(f"  downloading {package} {version}")
+        print(f"  downloading {url}")
         req = urllib.request.Request(url, headers={"User-Agent": "SnowJob-Mods manifest builder"})
         with urllib.request.urlopen(req, timeout=300) as r:
             data = r.read()
         with open(cached, "wb") as f:
             f.write(data)
     with open(cached, "rb") as f:
-        return url, f.read()
+        return f.read()
+
+
+def thunderstore_zip(package: str, version: str) -> tuple[str, bytes]:
+    owner, name = package.split("-", 1)
+    url = f"https://thunderstore.io/package/download/{owner}/{name}/{version}/"
+    return url, fetch_zip(url, f"{package}-{version}.zip")
 
 
 def build_mod(mod: dict) -> dict:
     src = mod["source"]
     out = {k: mod[k] for k in ("id", "name", "author", "side", "page")}
     files = []
-    if src["type"] == "thunderstore":
+    if src["type"] in ("thunderstore", "url"):
         out["version"] = src["version"]
-        url, data = thunderstore_zip(src["package"], src["version"])
+        if src["type"] == "thunderstore":
+            url, data = thunderstore_zip(src["package"], src["version"])
+        else:
+            url = src["url"]
+            data = fetch_zip(url, f"{mod['id']}-{src['version']}.zip")
         out["source"] = {"type": "zip", "url": url, "sha256": sha256(data)}
         z = zipfile.ZipFile(io.BytesIO(data))
         entries = {n.replace("\\", "/"): n for n in z.namelist() if not n.endswith(("/", "\\"))}
@@ -61,7 +74,7 @@ def build_mod(mod: dict) -> dict:
             frm, to = check_rel(m["from"]), check_rel(m["to"])
             picks = [(e, to + e[len(frm):]) for e in entries if e.startswith(frm)] if frm.endswith("/") else [(frm, to)]
             if not picks or any(e not in entries for e, _ in picks):
-                sys.exit(f"{mod['id']}: '{frm}' not found in {src['package']} {src['version']}")
+                sys.exit(f"{mod['id']}: '{frm}' not found in {src.get('package', url)} {src['version']}")
             for e, dest in sorted(picks):
                 f = {"from": entries[e], "to": check_rel(dest), "sha256": sha256(z.read(entries[e]))}
                 if m.get("onlyIfMissing"):
