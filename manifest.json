@@ -1,0 +1,553 @@
+{
+  "schema": 1,
+  "name": "Snow Job mod pack",
+  "game": "Valheim 1.0.16",
+  "generated": "2026-09-25T18:07:47Z",
+  "repoBase": "https://raw.githubusercontent.com/JohmesSnow/SnowJob-Mods/main/",
+  "mods": [
+    {
+      "id": "BepInExPack",
+      "name": "BepInExPack Valheim",
+      "author": "denikson",
+      "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/denikson/BepInExPack_Valheim/",
+      "version": "5.4.2351",
+      "source": {
+        "type": "zip",
+        "url": "https://thunderstore.io/package/download/denikson/BepInExPack_Valheim/5.4.2351/",
+        "sha256": "bce631497976a93977ceb08e166712e6c31d15244956f89f17df092a9b62e29f"
+      },
+      "files": [
+        {
+          "from": "BepInExPack_Valheim/BepInEx/core/0Harmony.dll",
+          "to": "BepInEx/core/0Harmony.dll",
+          "sha256": "1a21cc03424fc82c3dd1346905d16494536b9595ae4162228d99fb7c285c1031"
+        },
+        {
+          "from": "BepInExPack_Valheim/BepInEx/core/0Harmony.xml",
+          "to": "BepInEx/core/0Harmony.xml",
+          "sha256": "d1f02fc3ada3a13da307de421225bfe56ebe24064370980979391c4be021672f"
+        },
+        {
+          "from": "BepInExPack_Valheim/BepInEx/core/0Harmony20.dll",
+          "to": "BepInEx/core/0Harmony20.dll",
+          "sha256": "5708451a91eaecee71a49b1881fb081ee22142e11de04e8575f4f6832fa16d0e"
+        },
+        {
+          "from": "BepInExPack_Valheim/BepInEx/core/BepInEx.Harmony.dll",
+          "to": "BepInEx/core/BepInEx.Harmony.dll",
+          "sha256": "2f0270073e307095ce980f578bfc9489f7ac98d360b9d41f77370a84c33edd7a"
+        },
+        {
+          "from": "BepInExPack_Valheim/BepInEx/core/BepInEx.Harmony.xml",
+          "to": "BepInEx/core/BepInEx.Harmony.xml",
+          "sha256": "a04fedf08f7c81f5d01aba6f2840a7ffce50b79bbd24587d8dbe69ab73971d29"
+        },
+        {
+          "from": "BepInExPack_Valheim/BepInEx/core/BepInEx.Preloader.dll",
+          "to": "BepInEx/core/BepInEx.Preloader.dll",
+          "sha256": "c38f984772fdddc7f87ddd66c0326c6673cc6a4b4ea7beb5ab94edb3e59dbabe"
+        },
+        {
+          "from": "BepInExPack_Valheim/BepInEx/core/BepInEx.Preloader.xml",
+          "to": "BepInEx/core/BepInEx.Preloader.xml",
+          "sha256": "ab433415cb8f006f683c0c193d140b92f0244568e6e443d53a5c4c18a632dc98"
+        },
+        {
+          "from": "BepInExPack_Valheim/BepInEx/core/BepInEx.dll",
+          "to": "BepInEx/core/BepInEx.dll",
+          "sha256": "36bdb9af2b8f2eda4c911d2a49c2a05a4f643637ad724b876d292a9a5fcd8ae6"
+        },
+        {
+          "from": "BepInExPack_Valheim/BepInEx/core/BepInEx.xml",
+          "to": "BepInEx/core/BepInEx.xml",
+          "sha256": "65b9d6e40c8645e04cf1cf6342c2812f52766f2d0fc1b5736b03f17fb23df11e"
+        },
+        {
+          "from": "BepInExPack_Valheim/BepInEx/core/HarmonyXInterop.dll",
+          "to": "BepInEx/core/HarmonyXInterop.dll",
+          "sha256": "dac1b52655f03ba00773eb63894bfd0da4d4df6d47041a64cfd4b1da757371ba"
+        },
+        {
+          "from": "BepInExPack_Valheim/BepInEx/core/Mono.Cecil.Mdb.dll",
+          "to": "BepInEx/core/Mono.Cecil.Mdb.dll",
+          "sha256": "5896d1898f616701fff18f3b2c71e6b844d2390ef9f41e1c5fccce8cb27c698e"
+        },
+        {
+          "from": "BepInExPack_Valheim/BepInEx/core/Mono.Cecil.Pdb.dll",
+          "to": "BepInEx/core/Mono.Cecil.Pdb.dll",
+          "sha256": "174db44a067f58561510af746f3caeb032037762c57a31c8d9ee32db25174984"
+        },
+        {
+          "from": "BepInExPack_Valheim/BepInEx/core/Mono.Cecil.Rocks.dll",
+          "to": "BepInEx/core/Mono.Cecil.Rocks.dll",
+          "sha256": "54ac539fb5ddc8b44c0e9acd0fcb7324f89d1a072edf8ebc1b06dd691e3d3927"
+        },
+        {
+          "from": "BepInExPack_Valheim/BepInEx/core/Mono.Cecil.dll",
+          "to": "BepInEx/core/Mono.Cecil.dll",
+          "sha256": "7ae470288fff4a402899c254d0a76cefef55877f5c54f96e83c797cc5bb6e2f6"
+        },
+        {
+          "from": "BepInExPack_Valheim/BepInEx/core/MonoMod.RuntimeDetour.dll",
+          "to": "BepInEx/core/MonoMod.RuntimeDetour.dll",
+          "sha256": "40e49bb314391cd7bddc2644f8553eeba92c194b940836b103df16955c464e0c"
+        },
+        {
+          "from": "BepInExPack_Valheim/BepInEx/core/MonoMod.RuntimeDetour.xml",
+          "to": "BepInEx/core/MonoMod.RuntimeDetour.xml",
+          "sha256": "54887808960d156550b37d602d08847607aa9e908d039f2765fb0b5e79394aa4"
+        },
+        {
+          "from": "BepInExPack_Valheim/BepInEx/core/MonoMod.Utils.dll",
+          "to": "BepInEx/core/MonoMod.Utils.dll",
+          "sha256": "9d1495f147ac93c4f81f84538c1a326e8f8a6aefc78d6289d798f3ce1162c5e9"
+        },
+        {
+          "from": "BepInExPack_Valheim/BepInEx/core/MonoMod.Utils.xml",
+          "to": "BepInEx/core/MonoMod.Utils.xml",
+          "sha256": "0577b362023a3432d6e8d7934c5eddc3e08fdbb19e191af083e341562c5ede38"
+        },
+        {
+          "from": "BepInExPack_Valheim/winhttp.dll",
+          "to": "winhttp.dll",
+          "sha256": "93406d0a02e7c164b89828cbfe3b289930a112d2eca50bd4a52e72ece169e6a8"
+        },
+        {
+          "from": "BepInExPack_Valheim/doorstop_config.ini",
+          "to": "doorstop_config.ini",
+          "sha256": "4d5c6dfa0f771c6a5b1b0c559aca0bd0ece7d08b08fff894708dc3b73ce73cfc"
+        },
+        {
+          "from": "BepInExPack_Valheim/.doorstop_version",
+          "to": ".doorstop_version",
+          "sha256": "84fa42545c0993edf8a5559d2a0772260f85f4a7ed29ec75e6590be64ed98067"
+        },
+        {
+          "from": "BepInExPack_Valheim/BepInEx/config/BepInEx.cfg",
+          "to": "BepInEx/config/BepInEx.cfg",
+          "sha256": "3d460196bb8f993fc71048efc6d1bbc21b5364eefac778df61955138c83cc677",
+          "onlyIfMissing": true
+        }
+      ]
+    },
+    {
+      "id": "Jotunn",
+      "name": "Jotunn",
+      "author": "ValheimModding",
+      "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/ValheimModding/Jotunn/",
+      "version": "2.30.2",
+      "source": {
+        "type": "zip",
+        "url": "https://thunderstore.io/package/download/ValheimModding/Jotunn/2.30.2/",
+        "sha256": "8aae92da2be0eb6820cd4cf57e2f6c1d6ad0d738d4915966e7c3d7a94e9a9b0f"
+      },
+      "files": [
+        {
+          "from": "plugins/Jotunn.dll",
+          "to": "BepInEx/plugins/Jotunn/Jotunn.dll",
+          "sha256": "9509221046842a70f94b98bab4cb41005dee026823a7a79345829ed46a30f796"
+        }
+      ]
+    },
+    {
+      "id": "YamlDotNet",
+      "name": "YamlDotNet",
+      "author": "ValheimModding",
+      "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/ValheimModding/YamlDotNet/",
+      "version": "16.3.1",
+      "source": {
+        "type": "zip",
+        "url": "https://thunderstore.io/package/download/ValheimModding/YamlDotNet/16.3.1/",
+        "sha256": "2280480d2add7d6a7a17b882f9b755145160c852e89a14794d1493d08495d2ac"
+      },
+      "files": [
+        {
+          "from": "plugins/YamlDotNet.dll",
+          "to": "BepInEx/plugins/YamlDotNet/YamlDotNet.dll",
+          "sha256": "9172f0758ed76963e0ede3b5ca9a1fb5b82f64c7e7a92cb3a6de39efa933a668"
+        },
+        {
+          "from": "plugins/YamlDotNetDetector.dll",
+          "to": "BepInEx/plugins/YamlDotNet/YamlDotNetDetector.dll",
+          "sha256": "db5a75085f60d69a05979af303d6b0f1db15b1d5d84c77f606d876547ef1f482"
+        }
+      ]
+    },
+    {
+      "id": "ConditionalConfigSync",
+      "name": "Conditional Config Sync",
+      "author": "shudnal",
+      "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/shudnal/ConditionalConfigSync/",
+      "version": "1.0.9",
+      "source": {
+        "type": "zip",
+        "url": "https://thunderstore.io/package/download/shudnal/ConditionalConfigSync/1.0.9/",
+        "sha256": "257835c9456b22843d79e383cead7b921a495de740d128b9eca0e5d409624800"
+      },
+      "files": [
+        {
+          "from": "ConditionalConfigSync.dll",
+          "to": "BepInEx/plugins/ConditionalConfigSync/ConditionalConfigSync.dll",
+          "sha256": "29fb07271c4f58f3f22c5b0d6db8aa13445b94abd3a92ee46c280283ca2b87a9"
+        },
+        {
+          "from": "ConditionalConfigSync.Plugin.dll",
+          "to": "BepInEx/plugins/ConditionalConfigSync/ConditionalConfigSync.Plugin.dll",
+          "sha256": "537d7185dc3d00b5715a9f9f09727fc15884a4f01c0700bbc661f0045fafde2a"
+        }
+      ]
+    },
+    {
+      "id": "ExtraSlots",
+      "name": "Extra Slots",
+      "author": "shudnal",
+      "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/shudnal/ExtraSlots/",
+      "version": "1.2.13",
+      "source": {
+        "type": "zip",
+        "url": "https://thunderstore.io/package/download/shudnal/ExtraSlots/1.2.13/",
+        "sha256": "9c938436a5d7f9d013d9accf598d8b8c185d883b364ff48b6239a48a969a92d1"
+      },
+      "files": [
+        {
+          "from": "ExtraSlots.dll",
+          "to": "BepInEx/plugins/ExtraSlots/ExtraSlots.dll",
+          "sha256": "ec7787224394fc8a3517a0b19b814c9f3691a17e83d68efb2335a8fe5c1a6b16"
+        },
+        {
+          "from": "Extra Slots.English.json",
+          "to": "BepInEx/plugins/ExtraSlots/Extra Slots.English.json",
+          "sha256": "a2e86529773d9857a2c0c30b21863a1db965d7a3707ab5f56a17f4e31173227c"
+        }
+      ]
+    },
+    {
+      "id": "PlantEverything",
+      "name": "Plant Everything",
+      "author": "Advize",
+      "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/Advize/PlantEverything/",
+      "version": "1.21.3",
+      "source": {
+        "type": "zip",
+        "url": "https://thunderstore.io/package/download/Advize/PlantEverything/1.21.3/",
+        "sha256": "a731227548d4bb0c669da8faf3b4d17f02ea2696b6fac85fcee9cfc3cfd32446"
+      },
+      "files": [
+        {
+          "from": "Advize_PlantEverything.dll",
+          "to": "BepInEx/plugins/PlantEverything/Advize_PlantEverything.dll",
+          "sha256": "313d57d5d9df2a27bff04ab184487d544a0749bbbe2c10cb1c41a0ae964cac62"
+        }
+      ]
+    },
+    {
+      "id": "PlantEasily",
+      "name": "Plant Easily",
+      "author": "Advize",
+      "side": "client",
+      "page": "https://thunderstore.io/c/valheim/p/Advize/PlantEasily/",
+      "version": "2.2.2",
+      "source": {
+        "type": "zip",
+        "url": "https://thunderstore.io/package/download/Advize/PlantEasily/2.2.2/",
+        "sha256": "415c6bab9abd622f05b44d3eb431e00a62602f3e455586fc310484bcf1770a3f"
+      },
+      "files": [
+        {
+          "from": "Advize_PlantEasily.dll",
+          "to": "BepInEx/plugins/PlantEasily/Advize_PlantEasily.dll",
+          "sha256": "8e48c43bb36c4e299037001734607fadd0635803d60e8ab84023a3bc7ffc6a58"
+        }
+      ]
+    },
+    {
+      "id": "BuildCamera",
+      "name": "Valheim Build Camera",
+      "author": "Stonaar",
+      "side": "client",
+      "page": "https://thunderstore.io/c/valheim/p/Stonaar/ValheimBuildCamera/",
+      "version": "1.8.0",
+      "source": {
+        "type": "zip",
+        "url": "https://thunderstore.io/package/download/Stonaar/ValheimBuildCamera/1.8.0/",
+        "sha256": "9af29b4f58107940857dd5b308851fd42cbabcefb6d082aaaba65bec90fc91c9"
+      },
+      "files": [
+        {
+          "from": "BepInEx/plugins/ValheimBuildCamera/ValheimBuildCamera.dll",
+          "to": "BepInEx/plugins/ValheimBuildCamera/ValheimBuildCamera.dll",
+          "sha256": "1a53f198168a557336d469ec18a2b738642713636c2e2dedece2f609a4c3f485"
+        }
+      ]
+    },
+    {
+      "id": "BetterMap",
+      "name": "BetterMap",
+      "author": "xtavim",
+      "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/xtavim/BetterMap/",
+      "version": "1.1.0",
+      "source": {
+        "type": "zip",
+        "url": "https://thunderstore.io/package/download/xtavim/BetterMap/1.1.0/",
+        "sha256": "f0b62e102560e2855f3aee728ea3ef4f71a4226e4c0464cb538380815a99dd9d"
+      },
+      "files": [
+        {
+          "from": "BetterMap.dll",
+          "to": "BepInEx/plugins/BetterMap/BetterMap.dll",
+          "sha256": "bb0a0a2e4e9ea2b388cd55f486a61057bf57f982d5647aa649375d4b1e7bae04"
+        }
+      ]
+    },
+    {
+      "id": "OdinShip",
+      "name": "OdinShip",
+      "author": "Marlthon",
+      "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/Marlthon/OdinShip/",
+      "version": "0.8.1",
+      "source": {
+        "type": "zip",
+        "url": "https://thunderstore.io/package/download/Marlthon/OdinShip/0.8.1/",
+        "sha256": "6a9922502d0205c2ac131552e11d3f8b3718757aff1db33684ada1b14ed0996c"
+      },
+      "files": [
+        {
+          "from": "OdinShip/OdinShip.dll",
+          "to": "BepInEx/plugins/OdinShip/OdinShip.dll",
+          "sha256": "c9893d567a87c339f6f6f4efda589259c9b15c6b634e6dfb172e0dc70dc4d3af"
+        }
+      ]
+    },
+    {
+      "id": "OdinHorse",
+      "name": "OdinHorse",
+      "author": "OdinPlus",
+      "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/OdinPlus/OdinHorse/",
+      "version": "1.7.3",
+      "source": {
+        "type": "zip",
+        "url": "https://thunderstore.io/package/download/OdinPlus/OdinHorse/1.7.3/",
+        "sha256": "c45f06dd47bb23250707cfa7a558030b977fcc89b889cec8da9274eb203d72f2"
+      },
+      "files": [
+        {
+          "from": "OdinHorse.dll",
+          "to": "BepInEx/plugins/OdinHorse/OdinHorse.dll",
+          "sha256": "424b2406ac4c4f024e57c349277e3a4da03ab95802c23a955247167b3751a99d"
+        }
+      ]
+    },
+    {
+      "id": "BoatAnchor",
+      "name": "Boat Anchor",
+      "author": "KalellModding",
+      "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/KalellModding/BoatAnchor/",
+      "version": "1.3.3",
+      "source": {
+        "type": "zip",
+        "url": "https://thunderstore.io/package/download/KalellModding/BoatAnchor/1.3.3/",
+        "sha256": "fd86fc0f30448e091c51ffe7843c559c593429772be75c8a27dc987e792b22c2"
+      },
+      "files": [
+        {
+          "from": "BoatAnchor.dll",
+          "to": "BepInEx/plugins/BoatAnchor/BoatAnchor.dll",
+          "sha256": "7605c81f0517fc9bb80d9edfd5d4eedc427d05162bec2d1c7372370b24becbe4"
+        }
+      ]
+    },
+    {
+      "id": "HideBags",
+      "name": "HideBags",
+      "author": "Snow Job group",
+      "side": "both",
+      "page": "https://github.com/JohmesSnow/SnowJob-Mods/tree/main/mods/HideBags",
+      "version": "1.2.0",
+      "source": {
+        "type": "files",
+        "base": "https://raw.githubusercontent.com/JohmesSnow/SnowJob-Mods/main/"
+      },
+      "files": [
+        {
+          "from": "mods/HideBags/HideBags.dll",
+          "to": "BepInEx/plugins/HideBags/HideBags.dll",
+          "sha256": "e9a06bb56fe17217fb447f434ca56d4b8bdc586cbc4db084331a0ec6008b3cba"
+        },
+        {
+          "from": "mods/HideBags/icons/bag_bjorn.png",
+          "to": "BepInEx/plugins/HideBags/icons/bag_bjorn.png",
+          "sha256": "a7b8ab155264298cb31a70b0d614a851e4701ece10e39ad4241d7f8673db4033"
+        },
+        {
+          "from": "mods/HideBags/icons/bag_deer.png",
+          "to": "BepInEx/plugins/HideBags/icons/bag_deer.png",
+          "sha256": "e568cf75113e3d28ad3ad95933e549c182211f0966c31fd7a11e9d4315aa99a4"
+        },
+        {
+          "from": "mods/HideBags/icons/bag_lines.png",
+          "to": "BepInEx/plugins/HideBags/icons/bag_lines.png",
+          "sha256": "b96c8a82b948bae1f0a74f60285997fe08bf0f3432f523c2d355ec48bdb598e1"
+        },
+        {
+          "from": "mods/HideBags/icons/bag_lox.png",
+          "to": "BepInEx/plugins/HideBags/icons/bag_lox.png",
+          "sha256": "c678b2d380f2a6498f5b0b3f1cf20b226efa0723fbf8aedad77433e7f024d34e"
+        },
+        {
+          "from": "mods/HideBags/icons/bag_mask.png",
+          "to": "BepInEx/plugins/HideBags/icons/bag_mask.png",
+          "sha256": "5627058c12b4e6d7924e6be66d38a78ec7aaeff77e73fed2adfa6d2bed7de075"
+        },
+        {
+          "from": "mods/HideBags/icons/bag_scale.png",
+          "to": "BepInEx/plugins/HideBags/icons/bag_scale.png",
+          "sha256": "3a193f9a49cde8924094531bce6f9946fe35ff37dc0c81d919db9b2fffdc721f"
+        },
+        {
+          "from": "mods/HideBags/icons/bag_troll.png",
+          "to": "BepInEx/plugins/HideBags/icons/bag_troll.png",
+          "sha256": "4f99f2f298bc1582991cea0b4aada2f1ccd1a6c858465a39ab5adc3423114b67"
+        },
+        {
+          "from": "mods/HideBags/icons/bag_wolf.png",
+          "to": "BepInEx/plugins/HideBags/icons/bag_wolf.png",
+          "sha256": "add6a0b470ba36fc362aab1b2e79563f906ac9c7352ed638cb205f9d56c100c9"
+        },
+        {
+          "from": "mods/HideBags/models/adventurer.obj",
+          "to": "BepInEx/plugins/HideBags/models/adventurer.obj",
+          "sha256": "2f979eeb0e3a7c3471510240e8306b82c82e1a90844bcb5fe80c12c1952ff3d1"
+        },
+        {
+          "from": "mods/HideBags/models/adventurer.png",
+          "to": "BepInEx/plugins/HideBags/models/adventurer.png",
+          "sha256": "31d4a66979f29274693e35bf258029a247df4b6ab2903be3bdceaf55c6bcd32a"
+        },
+        {
+          "from": "mods/HideBags/models/bag.obj",
+          "to": "BepInEx/plugins/HideBags/models/bag.obj",
+          "sha256": "608077008706a7a6fa5c901203e884c11ce4fc62b8141e7d474d23da9204d945"
+        },
+        {
+          "from": "mods/HideBags/models/bag.png",
+          "to": "BepInEx/plugins/HideBags/models/bag.png",
+          "sha256": "5aadb5c752887e757338107aec4aa5445e2a7a85dc5008f8005dcdd4052dc0fb"
+        },
+        {
+          "from": "mods/HideBags/models/knapsack.obj",
+          "to": "BepInEx/plugins/HideBags/models/knapsack.obj",
+          "sha256": "7d4f841dd9dd6d789e3a15ce09bdecf99f022d4a729d40495a609d74f1851d61"
+        },
+        {
+          "from": "mods/HideBags/models/knapsack.png",
+          "to": "BepInEx/plugins/HideBags/models/knapsack.png",
+          "sha256": "1b153b5d7de22ebe951162b5b724d037d28e09b45d6c724a5d22ad4daa6576aa"
+        },
+        {
+          "from": "mods/HideBags/models/pouch.obj",
+          "to": "BepInEx/plugins/HideBags/models/pouch.obj",
+          "sha256": "77111190fc3f3b58191c1e6b7897fd7177d194cfff5c69b9e1c5bfc9a278b0fc"
+        },
+        {
+          "from": "mods/HideBags/models/pouch.png",
+          "to": "BepInEx/plugins/HideBags/models/pouch.png",
+          "sha256": "6dde766d94c7b6147db5b3ffb001a50a4e7c934f4c1805996a81097ce9e13bc2"
+        },
+        {
+          "from": "mods/HideBags/models/rucksack.obj",
+          "to": "BepInEx/plugins/HideBags/models/rucksack.obj",
+          "sha256": "1515901254af9f83eccac756621a6afef8dd05ad35e04029c065f88eb9fa7f4d"
+        },
+        {
+          "from": "mods/HideBags/models/rucksack.png",
+          "to": "BepInEx/plugins/HideBags/models/rucksack.png",
+          "sha256": "23c43de5b2d14cd281705e0692d855b43453feb6f115fc9c6245498e1914e7c0"
+        },
+        {
+          "from": "mods/HideBags/models/satchel.obj",
+          "to": "BepInEx/plugins/HideBags/models/satchel.obj",
+          "sha256": "d12e192102e546b1a7a61f1f036e90233ef19d6134bd9639df88a6bc86c132f9"
+        },
+        {
+          "from": "mods/HideBags/models/satchel.png",
+          "to": "BepInEx/plugins/HideBags/models/satchel.png",
+          "sha256": "9485f52b145482bfc02b28d0296b996436418fb446e0f9e7c3f98424843e8784"
+        }
+      ]
+    },
+    {
+      "id": "PlantedYield",
+      "name": "PlantedYield",
+      "author": "Snow Job group",
+      "side": "both",
+      "page": "https://github.com/JohmesSnow/SnowJob-Mods/tree/main/mods/PlantedYield",
+      "version": "1.0.0",
+      "source": {
+        "type": "files",
+        "base": "https://raw.githubusercontent.com/JohmesSnow/SnowJob-Mods/main/"
+      },
+      "files": [
+        {
+          "from": "mods/PlantedYield/PlantedYield.dll",
+          "to": "BepInEx/plugins/PlantedYield/PlantedYield.dll",
+          "sha256": "e46520af3a1c3a4b6907e6f3e260bffef2e04c9fb3356517c6afedcce3edef33"
+        }
+      ]
+    },
+    {
+      "id": "TameFollow",
+      "name": "TameFollow",
+      "author": "Snow Job group",
+      "side": "client",
+      "page": "https://github.com/JohmesSnow/SnowJob-Mods/tree/main/mods/TameFollow",
+      "version": "1.0.0",
+      "source": {
+        "type": "files",
+        "base": "https://raw.githubusercontent.com/JohmesSnow/SnowJob-Mods/main/"
+      },
+      "files": [
+        {
+          "from": "mods/TameFollow/TameFollow.dll",
+          "to": "BepInEx/plugins/TameFollow.dll",
+          "sha256": "15e3e4b5a9f39c0b60021fa6e34d2244c5edcc43ffca1eed4cee1bfc37d32a8e"
+        }
+      ]
+    }
+  ],
+  "configs": [
+    {
+      "from": "configs/o0gre.HideBags.cfg",
+      "to": "BepInEx/config/o0gre.HideBags.cfg",
+      "sha256": "92256b24606a3a52975676d2b19dca46ef52e7797a425e2f710e76070e3b07b9"
+    },
+    {
+      "from": "configs/shudnal.ExtraSlots.cfg",
+      "to": "BepInEx/config/shudnal.ExtraSlots.cfg",
+      "sha256": "bd9664efcb8c03a5fbc9bd4a21ef82e00db187a0628f2f239331dff84ea9a92d"
+    },
+    {
+      "from": "configs/o0gre.PlantedYield.cfg",
+      "to": "BepInEx/config/o0gre.PlantedYield.cfg",
+      "sha256": "d0bb21d45ecf18fc123340e67221db5a00e6c302db367d86b187c3c6112bc31b"
+    }
+  ],
+  "remove": [
+    "BepInEx/plugins/ValheimRAFT",
+    "BepInEx/plugins/RaftGuard",
+    "BepInEx/config/zolantris.ValheimRAFT.cfg",
+    "BepInEx/config/zolantris.DynamicLocations.cfg",
+    "BepInEx/config/zolantris.ZdoWatcher.cfg",
+    "BepInEx/config/o0gre.RaftGuard.cfg",
+    "Valheim/BepInEx"
+  ]
+}

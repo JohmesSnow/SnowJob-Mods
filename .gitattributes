@@ -1,0 +1,10 @@
+# Store these byte-for-byte: the updater checks their SHA-256 against manifest.json
+*.cfg -text
+*.bat -text
+*.ps1 -text
+*.dll binary
+*.png binary
+*.obj binary
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf

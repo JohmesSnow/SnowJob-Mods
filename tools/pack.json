@@ -1,0 +1,104 @@
+{
+  "_comment": "Hand-edited source of truth. Run: python tools/build_manifest.py  (writes manifest.json with checksums). Paths in 'to' are relative to the Valheim folder.",
+  "name": "Snow Job mod pack",
+  "game": "Valheim 1.0.16",
+  "mods": [
+    { "id": "BepInExPack", "name": "BepInExPack Valheim", "author": "denikson", "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/denikson/BepInExPack_Valheim/",
+      "source": { "type": "thunderstore", "package": "denikson-BepInExPack_Valheim", "version": "5.4.2351" },
+      "map": [ { "from": "BepInExPack_Valheim/BepInEx/core/", "to": "BepInEx/core/" },
+               { "from": "BepInExPack_Valheim/winhttp.dll", "to": "winhttp.dll" },
+               { "from": "BepInExPack_Valheim/doorstop_config.ini", "to": "doorstop_config.ini" },
+               { "from": "BepInExPack_Valheim/.doorstop_version", "to": ".doorstop_version" },
+               { "from": "BepInExPack_Valheim/BepInEx/config/BepInEx.cfg", "to": "BepInEx/config/BepInEx.cfg", "onlyIfMissing": true } ] },
+
+    { "id": "Jotunn", "name": "Jotunn", "author": "ValheimModding", "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/ValheimModding/Jotunn/",
+      "source": { "type": "thunderstore", "package": "ValheimModding-Jotunn", "version": "2.30.2" },
+      "map": [ { "from": "plugins/Jotunn.dll", "to": "BepInEx/plugins/Jotunn/Jotunn.dll" } ] },
+
+    { "id": "YamlDotNet", "name": "YamlDotNet", "author": "ValheimModding", "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/ValheimModding/YamlDotNet/",
+      "source": { "type": "thunderstore", "package": "ValheimModding-YamlDotNet", "version": "16.3.1" },
+      "map": [ { "from": "plugins/YamlDotNet.dll", "to": "BepInEx/plugins/YamlDotNet/YamlDotNet.dll" },
+               { "from": "plugins/YamlDotNetDetector.dll", "to": "BepInEx/plugins/YamlDotNet/YamlDotNetDetector.dll" } ] },
+
+    { "id": "ConditionalConfigSync", "name": "Conditional Config Sync", "author": "shudnal", "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/shudnal/ConditionalConfigSync/",
+      "source": { "type": "thunderstore", "package": "shudnal-ConditionalConfigSync", "version": "1.0.9" },
+      "map": [ { "from": "ConditionalConfigSync.dll", "to": "BepInEx/plugins/ConditionalConfigSync/ConditionalConfigSync.dll" },
+               { "from": "ConditionalConfigSync.Plugin.dll", "to": "BepInEx/plugins/ConditionalConfigSync/ConditionalConfigSync.Plugin.dll" } ] },
+
+    { "id": "ExtraSlots", "name": "Extra Slots", "author": "shudnal", "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/shudnal/ExtraSlots/",
+      "source": { "type": "thunderstore", "package": "shudnal-ExtraSlots", "version": "1.2.13" },
+      "map": [ { "from": "ExtraSlots.dll", "to": "BepInEx/plugins/ExtraSlots/ExtraSlots.dll" },
+               { "from": "Extra Slots.English.json", "to": "BepInEx/plugins/ExtraSlots/Extra Slots.English.json" } ] },
+
+    { "id": "PlantEverything", "name": "Plant Everything", "author": "Advize", "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/Advize/PlantEverything/",
+      "source": { "type": "thunderstore", "package": "Advize-PlantEverything", "version": "1.21.3" },
+      "map": [ { "from": "Advize_PlantEverything.dll", "to": "BepInEx/plugins/PlantEverything/Advize_PlantEverything.dll" } ] },
+
+    { "id": "PlantEasily", "name": "Plant Easily", "author": "Advize", "side": "client",
+      "page": "https://thunderstore.io/c/valheim/p/Advize/PlantEasily/",
+      "source": { "type": "thunderstore", "package": "Advize-PlantEasily", "version": "2.2.2" },
+      "map": [ { "from": "Advize_PlantEasily.dll", "to": "BepInEx/plugins/PlantEasily/Advize_PlantEasily.dll" } ] },
+
+    { "id": "BuildCamera", "name": "Valheim Build Camera", "author": "Stonaar", "side": "client",
+      "page": "https://thunderstore.io/c/valheim/p/Stonaar/ValheimBuildCamera/",
+      "source": { "type": "thunderstore", "package": "Stonaar-ValheimBuildCamera", "version": "1.8.0" },
+      "map": [ { "from": "BepInEx/plugins/ValheimBuildCamera/ValheimBuildCamera.dll", "to": "BepInEx/plugins/ValheimBuildCamera/ValheimBuildCamera.dll" } ] },
+
+    { "id": "BetterMap", "name": "BetterMap", "author": "xtavim", "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/xtavim/BetterMap/",
+      "source": { "type": "thunderstore", "package": "xtavim-BetterMap", "version": "1.1.0" },
+      "map": [ { "from": "BetterMap.dll", "to": "BepInEx/plugins/BetterMap/BetterMap.dll" } ] },
+
+    { "id": "OdinShip", "name": "OdinShip", "author": "Marlthon", "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/Marlthon/OdinShip/",
+      "source": { "type": "thunderstore", "package": "Marlthon-OdinShip", "version": "0.8.1" },
+      "map": [ { "from": "OdinShip/OdinShip.dll", "to": "BepInEx/plugins/OdinShip/OdinShip.dll" } ] },
+
+    { "id": "OdinHorse", "name": "OdinHorse", "author": "OdinPlus", "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/OdinPlus/OdinHorse/",
+      "source": { "type": "thunderstore", "package": "OdinPlus-OdinHorse", "version": "1.7.3" },
+      "map": [ { "from": "OdinHorse.dll", "to": "BepInEx/plugins/OdinHorse/OdinHorse.dll" } ] },
+
+    { "id": "BoatAnchor", "name": "Boat Anchor", "author": "KalellModding", "side": "both",
+      "page": "https://thunderstore.io/c/valheim/p/KalellModding/BoatAnchor/",
+      "source": { "type": "thunderstore", "package": "KalellModding-BoatAnchor", "version": "1.3.3" },
+      "map": [ { "from": "BoatAnchor.dll", "to": "BepInEx/plugins/BoatAnchor/BoatAnchor.dll" } ] },
+
+    { "id": "HideBags", "name": "HideBags", "author": "Snow Job group", "side": "both", "version": "1.2.0",
+      "page": "https://github.com/JohmesSnow/SnowJob-Mods/tree/main/mods/HideBags",
+      "source": { "type": "repo" },
+      "map": [ { "from": "mods/HideBags/", "to": "BepInEx/plugins/HideBags/" } ] },
+
+    { "id": "PlantedYield", "name": "PlantedYield", "author": "Snow Job group", "side": "both", "version": "1.0.0",
+      "page": "https://github.com/JohmesSnow/SnowJob-Mods/tree/main/mods/PlantedYield",
+      "source": { "type": "repo" },
+      "map": [ { "from": "mods/PlantedYield/PlantedYield.dll", "to": "BepInEx/plugins/PlantedYield/PlantedYield.dll" } ] },
+
+    { "id": "TameFollow", "name": "TameFollow", "author": "Snow Job group", "side": "client", "version": "1.0.0",
+      "page": "https://github.com/JohmesSnow/SnowJob-Mods/tree/main/mods/TameFollow",
+      "source": { "type": "repo" },
+      "map": [ { "from": "mods/TameFollow/TameFollow.dll", "to": "BepInEx/plugins/TameFollow.dll" } ] }
+  ],
+
+  "configs": [
+    { "from": "configs/o0gre.HideBags.cfg", "to": "BepInEx/config/o0gre.HideBags.cfg" },
+    { "from": "configs/shudnal.ExtraSlots.cfg", "to": "BepInEx/config/shudnal.ExtraSlots.cfg" },
+    { "from": "configs/o0gre.PlantedYield.cfg", "to": "BepInEx/config/o0gre.PlantedYield.cfg" }
+  ],
+
+  "remove": [
+    "BepInEx/plugins/ValheimRAFT",
+    "BepInEx/plugins/RaftGuard",
+    "BepInEx/config/zolantris.ValheimRAFT.cfg",
+    "BepInEx/config/zolantris.DynamicLocations.cfg",
+    "BepInEx/config/zolantris.ZdoWatcher.cfg",
+    "BepInEx/config/o0gre.RaftGuard.cfg",
+    "Valheim/BepInEx"
+  ]
+}
