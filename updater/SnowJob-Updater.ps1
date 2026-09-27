@@ -19,12 +19,14 @@ param(
     [string]$ManifestPath,
     [string]$LocalRepo,   # testing: read this repo's own files from disk instead of GitHub
     [switch]$CheckOnly,
-    [switch]$NoPause
+    [switch]$NoPause,
+    [switch]$SelfUpdated,  # set by the self-update step so the new copy does not update again
+    [switch]$AllowRunningGame   # testing only
 )
 
 $ErrorActionPreference = 'Stop'
 try { Start-Transcript -Path (Join-Path $env:TEMP 'SnowJob-Updater.log') -Force | Out-Null } catch { }
-$UpdaterVersion = '1.0.1'
+$UpdaterVersion = '1.1.0'
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 Add-Type -AssemblyName System.IO.Compression, System.IO.Compression.FileSystem
 
@@ -120,7 +122,7 @@ function Find-Valheim {
 Say "Snow Job mod updater $UpdaterVersion" 'Cyan'
 Say '-----------------------------------' 'Cyan'
 
-if (Get-Process -Name valheim -ErrorAction SilentlyContinue) {
+if (-not $AllowRunningGame -and (Get-Process -Name valheim -ErrorAction SilentlyContinue)) {
     Say 'Valheim is running. Close the game, then run the updater again.' 'Yellow'
     Finish 1
 }
@@ -148,7 +150,24 @@ try {
     Say 'Check your internet connection and try again. Nothing was changed.'
     Finish 1
 }
-if ($manifest.schema -ne 1) { Say 'This updater is too old for the current mod list. Download SnowJob-Updater.bat again.' 'Red'; Finish 1 }
+if ($manifest.schema -ne 1) { Say 'This updater is too old for the current mod list. Download SnowJob-Updater.zip again from github.com/JohmesSnow/SnowJob-Mods.' 'Red'; Finish 1 }
+# Keep this updater current: when the mod list names a newer updater, fetch it (checksum-verified), save it
+# over this file and run the new copy. Only when running from a file (the launcher that ships in the zip).
+if ($PSCommandPath -and -not $SelfUpdated -and $manifest.updater -and ([version]$manifest.updater.version -gt [version]$UpdaterVersion)) {
+    try {
+        Say "Updating the updater to $($manifest.updater.version)..." 'Cyan'
+        $bytes = if ($LocalRepo) { [System.IO.File]::ReadAllBytes((Join-Path $LocalRepo 'updater\SnowJob-Updater.ps1')) } else { Get-Download $manifest.updater.url }
+        if ((Get-BytesSha256 $bytes) -ne $manifest.updater.sha256) { throw 'checksum does not match' }
+        [System.IO.File]::WriteAllBytes($PSCommandPath, $bytes)
+        try { Stop-Transcript | Out-Null } catch { }
+        $next = @{} + $PSBoundParameters
+        $next['SelfUpdated'] = $true
+        & $PSCommandPath @next
+        exit $LASTEXITCODE
+    } catch {
+        Say "Could not update the updater itself ($($_.Exception.Message)); carrying on with this version." 'Yellow'
+    }
+}
 Say "Pack: $($manifest.name) for $($manifest.game)"
 Say ''
 

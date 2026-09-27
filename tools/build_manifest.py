@@ -116,6 +116,12 @@ def main():
         "configs": [],
         "remove": [check_rel(p) for p in spec.get("remove", [])],
     }
+    updater = os.path.join(ROOT, "updater", "SnowJob-Updater.ps1")
+    with open(updater, "rb") as fh:
+        data = fh.read()
+    import re
+    m = re.search(rb"\$UpdaterVersion = '([0-9.]+)'", data)
+    manifest["updater"] = {"version": m.group(1).decode() if m else "0.0.0", "url": RAW + "updater/SnowJob-Updater.ps1", "sha256": sha256(data)}
     for mod in spec["mods"]:
         print(mod["id"])
         manifest["mods"].append(build_mod(mod))
