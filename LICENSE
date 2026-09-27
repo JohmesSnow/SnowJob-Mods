@@ -3,7 +3,7 @@ MIT License
 Copyright (c) 2026 JohmesSnow and the Snow Job group
 
 This license covers only the files written for this project: the updater, the tools, the default
-settings files in configs/, and the HideBags, PlantedYield, TameFollow, HearthHoe and FreeCamTools mods in mods/.
+settings files in configs/, and the HideBags, PlantedYield, TameFollow, HearthHoe, FreeCamTools and SlimeTamer mods in mods/.
 Third-party mods listed in manifest.json are not part of this repository and remain under their
 authors' own terms.
 

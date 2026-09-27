@@ -90,6 +90,11 @@
       "source": { "type": "repo" },
       "map": [ { "from": "mods/FreeCamTools/FreeCamTools.dll", "to": "BepInEx/plugins/FreeCamTools/FreeCamTools.dll" } ] },
 
+    { "id": "SlimeTamer", "name": "SlimeTamer", "author": "Snow Job group", "side": "both", "version": "1.0.0",
+      "page": "https://github.com/JohmesSnow/SnowJob-Mods/tree/main/mods/SlimeTamer",
+      "source": { "type": "repo" },
+      "map": [ { "from": "mods/SlimeTamer/SlimeTamer.dll", "to": "BepInEx/plugins/SlimeTamer/SlimeTamer.dll" } ] },
+
     { "id": "HideBags", "name": "HideBags", "author": "Snow Job group", "side": "both", "version": "1.2.0",
       "page": "https://github.com/JohmesSnow/SnowJob-Mods/tree/main/mods/HideBags",
       "source": { "type": "repo" },

@@ -2,7 +2,7 @@
   "schema": 1,
   "name": "Snow Job mod pack",
   "game": "Valheim 1.0.16",
-  "generated": "2026-09-27T22:30:51Z",
+  "generated": "2026-09-27T22:34:26Z",
   "repoBase": "https://raw.githubusercontent.com/JohmesSnow/SnowJob-Mods/main/",
   "mods": [
     {
@@ -441,6 +441,25 @@
           "from": "mods/FreeCamTools/FreeCamTools.dll",
           "to": "BepInEx/plugins/FreeCamTools/FreeCamTools.dll",
           "sha256": "6a6ad4f8eea9ca8bb0123d150683f2234509adbb6e8ec039df1c7654724b2ac9"
+        }
+      ]
+    },
+    {
+      "id": "SlimeTamer",
+      "name": "SlimeTamer",
+      "author": "Snow Job group",
+      "side": "both",
+      "page": "https://github.com/JohmesSnow/SnowJob-Mods/tree/main/mods/SlimeTamer",
+      "version": "1.0.0",
+      "source": {
+        "type": "files",
+        "base": "https://raw.githubusercontent.com/JohmesSnow/SnowJob-Mods/main/"
+      },
+      "files": [
+        {
+          "from": "mods/SlimeTamer/SlimeTamer.dll",
+          "to": "BepInEx/plugins/SlimeTamer/SlimeTamer.dll",
+          "sha256": "a0a1f5ac86003c82ef95d51911cb5225a197948e6fd7ab9ac5a49431f9755f35"
         }
       ]
     },

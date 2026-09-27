@@ -64,6 +64,7 @@ modded.
 | [Advanced Terrain Modifiers](https://thunderstore.io/c/valheim/p/Searica/AdvancedTerrainModifiers/) | Searica | Client | Hoe tool sizes (Left Shift + wheel), square tools, shovel, reset tool |
 | [HearthHoe](mods/HearthHoe) | Snow Job group | Client | Hoe shares the pickaxe's size and shape (Left Alt + wheel, Left Alt + Z); Raise ground fills holes flush with where you stand |
 | [FreeCamTools](mods/FreeCamTools) | Snow Job group | Client | Hoe tools work under water; the pickaxe digs from the free build camera (F6) |
+| [SlimeTamer](mods/SlimeTamer) | Snow Job group | Both | Tame Blobs, Oozers and Growths with wolf meats; follow/stay, breeding, babies that grow up |
 | [HideBags](mods/HideBags) | Snow Job group | Both | Hide backpacks with extra rows, carry weight and a perk |
 | [PlantedYield](mods/PlantedYield) | Snow Job group | Both | Bushes you plant yourself give more per pick |
 | [TameFollow](mods/TameFollow) | Snow Job group | Client | Tamed boars and hens can follow or stay |
@@ -87,6 +88,6 @@ password are shared privately within the group and never appear in this reposito
 
 ## License
 
-The updater, tools and the Snow Job group mods (HideBags, PlantedYield, TameFollow, HearthHoe, FreeCamTools) are
+The updater, tools and the Snow Job group mods (HideBags, PlantedYield, TameFollow, HearthHoe, FreeCamTools, SlimeTamer) are
 released under the MIT License, see [LICENSE](LICENSE). Third-party mods are **not** covered by that
 license. They remain under their authors' own terms and are fetched from their original pages.
