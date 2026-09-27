@@ -12,8 +12,8 @@ Anyone is welcome to use this pack for their own game or server.
 
 ## For players
 
-1. Download **[SnowJob-Updater.bat](https://raw.githubusercontent.com/JohmesSnow/SnowJob-Mods/main/SnowJob-Updater.bat)**
-   (right-click the link, then choose *Save link as*). Put it anywhere, for example on your desktop.
+1. Download **[SnowJob-Updater.zip](https://github.com/JohmesSnow/SnowJob-Mods/releases/latest/download/SnowJob-Updater.zip)**
+   and extract it (right-click, then *Extract All*). Put `SnowJob-Updater.bat` anywhere, for example on your desktop.
 2. Close Valheim, then double-click `SnowJob-Updater.bat`.
 3. When it says it's finished, press **Y** to start Valheim, or start the game from Steam as usual.
 
