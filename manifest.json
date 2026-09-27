@@ -2,7 +2,7 @@
   "schema": 1,
   "name": "Snow Job mod pack",
   "game": "Valheim 1.0.16",
-  "generated": "2026-09-25T21:20:39Z",
+  "generated": "2026-09-27T22:30:51Z",
   "repoBase": "https://raw.githubusercontent.com/JohmesSnow/SnowJob-Mods/main/",
   "mods": [
     {
@@ -383,6 +383,64 @@
           "from": "HearthBelow.dll",
           "to": "BepInEx/plugins/HearthBelow/HearthBelow.dll",
           "sha256": "a79a49aa9472e3559baf17715dad04c7b9980b99a74aafb9869846dd9d36fe54"
+        }
+      ]
+    },
+    {
+      "id": "AdvancedTerrainModifiers",
+      "name": "Advanced Terrain Modifiers",
+      "author": "Searica",
+      "side": "client",
+      "page": "https://thunderstore.io/c/valheim/p/Searica/AdvancedTerrainModifiers/",
+      "version": "1.5.4",
+      "source": {
+        "type": "zip",
+        "url": "https://thunderstore.io/package/download/Searica/AdvancedTerrainModifiers/1.5.4/",
+        "sha256": "d4e2023a8ef8c5fd8293e741e4e920e79a24cbcaf87ec7ff7b6e9a9107277bcf"
+      },
+      "files": [
+        {
+          "from": "TerrainTools.dll",
+          "to": "BepInEx/plugins/AdvancedTerrainModifiers/TerrainTools.dll",
+          "sha256": "e4e790cee60aef94b1ea36725bc93f4a1ca98ad52a0ba6038310fe748c86749b"
+        }
+      ]
+    },
+    {
+      "id": "HearthHoe",
+      "name": "HearthHoe",
+      "author": "Snow Job group",
+      "side": "client",
+      "page": "https://github.com/JohmesSnow/SnowJob-Mods/tree/main/mods/HearthHoe",
+      "version": "1.0.0",
+      "source": {
+        "type": "files",
+        "base": "https://raw.githubusercontent.com/JohmesSnow/SnowJob-Mods/main/"
+      },
+      "files": [
+        {
+          "from": "mods/HearthHoe/HearthHoe.dll",
+          "to": "BepInEx/plugins/HearthHoe/HearthHoe.dll",
+          "sha256": "8c5647f412a5ee3a4b8d781ff92872fda9b8d43364798566cd8633c12c8ba554"
+        }
+      ]
+    },
+    {
+      "id": "FreeCamTools",
+      "name": "FreeCamTools",
+      "author": "Snow Job group",
+      "side": "client",
+      "page": "https://github.com/JohmesSnow/SnowJob-Mods/tree/main/mods/FreeCamTools",
+      "version": "1.0.0",
+      "source": {
+        "type": "files",
+        "base": "https://raw.githubusercontent.com/JohmesSnow/SnowJob-Mods/main/"
+      },
+      "files": [
+        {
+          "from": "mods/FreeCamTools/FreeCamTools.dll",
+          "to": "BepInEx/plugins/FreeCamTools/FreeCamTools.dll",
+          "sha256": "6a6ad4f8eea9ca8bb0123d150683f2234509adbb6e8ec039df1c7654724b2ac9"
         }
       ]
     },

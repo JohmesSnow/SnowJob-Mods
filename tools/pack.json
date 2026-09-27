@@ -75,6 +75,21 @@
       "source": { "type": "url", "url": "https://cdn.hexium.gg/upload/424/0.6.2.zip", "version": "0.6.2" },
       "map": [ { "from": "HearthBelow.dll", "to": "BepInEx/plugins/HearthBelow/HearthBelow.dll" } ] },
 
+    { "id": "AdvancedTerrainModifiers", "name": "Advanced Terrain Modifiers", "author": "Searica", "side": "client",
+      "page": "https://thunderstore.io/c/valheim/p/Searica/AdvancedTerrainModifiers/",
+      "source": { "type": "thunderstore", "package": "Searica-AdvancedTerrainModifiers", "version": "1.5.4" },
+      "map": [ { "from": "TerrainTools.dll", "to": "BepInEx/plugins/AdvancedTerrainModifiers/TerrainTools.dll" } ] },
+
+    { "id": "HearthHoe", "name": "HearthHoe", "author": "Snow Job group", "side": "client", "version": "1.0.0",
+      "page": "https://github.com/JohmesSnow/SnowJob-Mods/tree/main/mods/HearthHoe",
+      "source": { "type": "repo" },
+      "map": [ { "from": "mods/HearthHoe/HearthHoe.dll", "to": "BepInEx/plugins/HearthHoe/HearthHoe.dll" } ] },
+
+    { "id": "FreeCamTools", "name": "FreeCamTools", "author": "Snow Job group", "side": "client", "version": "1.0.0",
+      "page": "https://github.com/JohmesSnow/SnowJob-Mods/tree/main/mods/FreeCamTools",
+      "source": { "type": "repo" },
+      "map": [ { "from": "mods/FreeCamTools/FreeCamTools.dll", "to": "BepInEx/plugins/FreeCamTools/FreeCamTools.dll" } ] },
+
     { "id": "HideBags", "name": "HideBags", "author": "Snow Job group", "side": "both", "version": "1.2.0",
       "page": "https://github.com/JohmesSnow/SnowJob-Mods/tree/main/mods/HideBags",
       "source": { "type": "repo" },
