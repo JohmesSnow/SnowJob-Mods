@@ -23,7 +23,8 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$UpdaterVersion = '1.0.0'
+try { Start-Transcript -Path (Join-Path $env:TEMP 'SnowJob-Updater.log') -Force | Out-Null } catch { }
+$UpdaterVersion = '1.0.1'
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 Add-Type -AssemblyName System.IO.Compression, System.IO.Compression.FileSystem
 
@@ -34,6 +35,8 @@ function Say([string]$text, [string]$color = 'Gray') { Write-Host $text -Foregro
 
 function Finish([int]$code) {
     if (-not $NoPause) { Write-Host ''; Read-Host 'Press Enter to close' | Out-Null }
+    try { Stop-Transcript | Out-Null } catch { }
+    if ($code -ne 0) { $code += 9 }   # 10 / 11: failure already shown and paused on
     exit $code
 }
 
@@ -269,4 +272,5 @@ if (-not $NoPause) {
     $answer = Read-Host 'Start Valheim now? (Y/N)'
     if ($answer -match '^[Yy]') { Start-Process 'steam://rungameid/892970' }
 }
+try { Stop-Transcript | Out-Null } catch { }
 exit 0
